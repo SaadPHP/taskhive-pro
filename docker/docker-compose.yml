@@ -6,10 +6,8 @@ services:
     container_name: taskhive-postgres
     ports:
       - "5432:5432"
-    environment:
-      POSTGRES_DB: taskhive
-      POSTGRES_USER: saad
-      POSTGRES_PASSWORD: securepass123
+    env_file:
+      - ../.env
     volumes:
       - pgdata:/var/lib/postgresql/data
     restart: unless-stopped
