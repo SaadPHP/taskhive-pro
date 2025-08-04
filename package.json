@@ -1,0 +1,16 @@
+{
+  "name": "taskhive-pro",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "prisma": "^6.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.13.0"
+  },
+  "prisma": {
+    "seed": "node --loader ts-node/esm prisma/seed.ts"
+  }
+}
